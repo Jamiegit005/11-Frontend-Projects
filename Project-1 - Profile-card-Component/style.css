@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    bottom: border-box;
+    box-sizing: border-box; /* fixed 'bottom: border-box;' typo */
 }
 
 ul {
@@ -9,19 +9,15 @@ ul {
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     background-color: #001E2FE5;
     padding: 1.25rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 0.1px); 
-
-    /* display: grid;
-    place-items: center;
-    min-height: calc(100vh - 0.1px); */
+    min-height: calc(100vh - 0.1px);
+    /* display: grid; place-items: center; min-height: calc(100vh - 0.1px); */
 }
 
 .container {
@@ -29,62 +25,63 @@ body {
     color: white;
     padding: 1.25rem;
     border-radius: 0.625rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(60, 236, 215, 0.5) ;
-
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    min-width: 300px; */
-
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(60, 236, 215, 0.5);
     max-width: 500px;
 }
 
+/* Profile Header - centers image + name */
 .container article:first-child {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: start;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.container article:first-child {
-    width: 5rem;
+.container article:first-child img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.container article:first-child {
-    margin-left: 1rem;
+.container article:first-child h1 {
+    font-size: 2rem;
+    margin: 0;
 }
 
-.container article:first-child div small {
+.container article:first-child h3 {
+    font-size: 1.3rem; /* slightly bigger job title */
+    font-weight: normal;
     opacity: 0.75;
+    margin-top: 5px;
 }
 
 .container article:nth-child(2) {
-    margin:1.5rem 0;
+    margin: 1.5rem 0;
+    text-align: center; /* center description text */
 }
-.container article:nth-child(2) P {
+
+.container article:nth-child(2) p {
     line-height: 1.8;
 }
 
-.container article:nth-child(3) h2 {
-   margin-bottom: 1rem
+.container article:nth-child(3) {
+    text-align: center;
+}
 
+.container article:nth-child(3) h2 {
+    margin-bottom: 1rem;
 }
 
 .container article:nth-child(3) ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: start;
+    justify-content: center; /* center socials */
 }
 
 .container article:nth-child(3) ul li {
     margin-right: 0.5rem;
 }
-
-/* @media (min-width: 500px) {
-.container {
-    width: 480px;
-}
-} */

@@ -1,0 +1,39 @@
+body {
+    color: #3f3d56
+}
+
+
+.container {
+    background-color: #f1f1f1;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+
+/*.container form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: inline;
+}
+
+.container form h3 span {
+    display: block;
+    text-align: center;
+    margin: 3rem 0;
+} */
+
+.container form label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.container form input {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3f3d5691;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+   }
