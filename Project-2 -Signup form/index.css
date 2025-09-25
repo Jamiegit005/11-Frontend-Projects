@@ -59,14 +59,14 @@ input, button {
 }
 
 .container form input:focus {
-    border-color: #3f3d56;
+    border-color: #563d52;
 }
 
 .container form .btn {
     color: #fff;
     padding: 0.625rem 3rem;
     font-size: 1rem;
-    background-color: #3f3d56;
+    background-color: #563d56;
     margin-top: 1.25rem;
     border: none;
     outline: none;
@@ -105,7 +105,7 @@ input, button {
 
 
 .ball {
-    background-color: #3f3d56;
+    background-color: #563d51;
     position: absolute;
     top: 2px;
     left: 2px;   
